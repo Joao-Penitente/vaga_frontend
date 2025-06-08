@@ -1,1 +1,17 @@
 @import "tailwindcss";
+
+@theme {
+    --color-*: initial;
+
+    --font-poppins: var(--font-poppins);
+    --font-roboto: var(--font-roboto);
+
+    --color-white: #F8F8F8;
+    --color-orange: #CC6237;
+    --color-black: #252525;
+    --color-black-opacity: #00000099;
+    --color-gray: #657593;
+    --color-red: #FF0000;
+    --color-input: #F6F6F6;
+    --color-subtitle: #2A4D8E80;
+}
