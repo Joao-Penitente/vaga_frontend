@@ -9,12 +9,11 @@ import {
 import Logo from "@/components/Logo";
 import Image from "next/image";
 import { login } from "./actions";
-import Link from "next/link";
 
 export default function Login() {
   return (
     <form
-      action=""
+      action={login}
       className="bg-[#F9FBFF] w-full h-screen flex flex-col items-center  p-3 md:p-0 md:justify-center "
     >
       <div
@@ -53,10 +52,7 @@ export default function Login() {
                   placeholder="Digite aqui"
                 />
               </InputRoot>
-
-              <Link href="/eventos">
-                <Button onClick={login}> Enviar</Button>
-              </Link>
+              <Button type="submit"> Enviar</Button>
             </div>
           </div>
         </div>

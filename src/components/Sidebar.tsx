@@ -91,16 +91,13 @@ export default function Sidebar() {
           <Image src={"/alterar.svg"} width={15} height={15} alt="Alterar" />
           Alterar dados
         </span>
-        <Link href="/login">
-          {/* biome-ignore lint/a11y/useKeyWithClickEvents: <explanation> */}
-          <div
-            className="flex items-center gap-[10px] h-[35px] font-medium cursor-pointer text-xs md:text-sm"
-            onClick={logout}
-          >
-            <Image src={"/sair.svg"} width={15} height={15} alt="Sair" />
-            Sair
-          </div>
-        </Link>
+        <div
+          className="flex items-center gap-[10px] h-[35px] font-medium cursor-pointer text-xs md:text-sm"
+          onClick={logout}
+        >
+          <Image src={"/sair.svg"} width={15} height={15} alt="Sair" />
+          Sair
+        </div>
       </div>
     </aside>
   );
